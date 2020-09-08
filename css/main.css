@@ -1437,7 +1437,7 @@ header .logo a {
   margin-right: auto;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.intro-content h5 {
+/* .intro-content h5 {
   color: #cc005f;
   font-family: "poppins-bold", sans-serif;
   font-size: 2.3rem;
@@ -1446,7 +1446,46 @@ header .logo a {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+} */
+
+.intro-content h5 {
+  position: relative;
+  top: 50%;
+  /* width: 24em; */
+  color: #cc005f;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 3s steps(30) 0s 1 normal both,
+    blinkTextCursor 600ms steps(30) infinite normal;
 }
+
+/* Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 340px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .intro-content .intro-position {
   font-family: "lora-regular", serif;
   font-size: 1.7rem;
@@ -2539,6 +2578,17 @@ header .logo a {
 }
 .contact-info h5 {
   color: #ff0077;
+}
+.sendEmail p {
+  color: gray;
+}
+
+.sendEmail:hover p {
+  color: #ff0077;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: transform 150ms;
 }
 
 /**
