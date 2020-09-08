@@ -1464,8 +1464,8 @@ header .logo a {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  animation: typewriter 4s steps(30) 0s 1 normal both,
-    blinkTextCursor 600ms steps(30) infinite normal;
+  animation: typewriter 2.3s steps(30) 1s 1 normal both,
+    blinkTextCursor 750ms steps(30) infinite normal;
 }
 
 /* Animation */
