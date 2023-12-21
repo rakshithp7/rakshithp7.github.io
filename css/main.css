@@ -1717,7 +1717,7 @@ header .logo a {
   text-align: center;
 }
 .button-section .button {
-  width: 250px;
+  min-width: 250px;
 }
 .button-section .button .fa {
   margin-right: 2rem;
